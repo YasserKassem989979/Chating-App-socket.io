@@ -10,7 +10,7 @@ const server = app.listen(3000,()=>console.log("Lestening..."))
 // Statci files
 app.use(express.static("public"));
 
-app.get("/:user",(req,res)=>{
+app.get("/",(req,res)=>{
     res.sendFile(__dirname+"/public/index.html")
 })
 // socket config
